@@ -13,3 +13,6 @@ if keyboard_check(vk_up)
 {
 	motion_add(image_angle, ship_acceleration);
 }
+
+//Wrap player to other side of the screen
+move_wrap(true, true, sprite_width/2)
