@@ -1,6 +1,13 @@
 /// @desc Running into an asteroid
 lives -= 1;
 
+with(obj_game)
+{
+	alarm[2] = room_speed;
+}
+
+audio_play_sound(snd_die, 1, false);
+
 instance_destroy();
 
 repeat(10)
