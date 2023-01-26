@@ -19,6 +19,7 @@ if (room == rm_game)
 	}
 	
 	alarm[1] = room_speed * 1;
+	alarm[3] = room_speed * 10;
 }
 
 
