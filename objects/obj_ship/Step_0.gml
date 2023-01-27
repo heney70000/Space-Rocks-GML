@@ -21,12 +21,12 @@ if (keyboard_check(vk_down) or keyboard_check(ord("S"))) and speed >= 0
 
 if keyboard_check_pressed(vk_space)
 {
-	repeat (bullet_count)
-	{
 	audio_play_sound(snd_zap, 1, false);
+	repeat (bullet_count + 1)
+	{
 	var inst = instance_create_layer(x,y, "Instances", obj_bullet)
-	inst.direction = image_angle
-	inst.image_angle = image_angle
+	inst.direction = (image_angle + random_range(bullet_count * -5, bullet_count * 5));
+	inst.image_angle = image_angle;
 	}
 }
 

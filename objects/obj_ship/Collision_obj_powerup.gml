@@ -36,3 +36,4 @@ switch other.sprite_index
 	lives += 1;
 }
 
+instance_destroy(other);
