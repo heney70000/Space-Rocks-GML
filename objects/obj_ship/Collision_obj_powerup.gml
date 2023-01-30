@@ -28,12 +28,15 @@ switch other.sprite_index
 			instance_create_layer(x,y, "Instances", obj_debris);
 		}
 	}
-
+	break;
+	
 	case spr_gun_up:
 	bullet_count += 1;
+	break;
 	
 	case spr_1up:
 	lives += 1;
+	break;
 }
 
 instance_destroy(other);
